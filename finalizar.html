@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>TechStore</h1>
+         <div class="search-bar">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <div class="cart">
+            <a href="carrinho.html">Carrinho</a>
+           <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <main>
+        <h2 class="section-title">Finalizar Compra</h2>
+        <div class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            <div class="order-items">
+                <div class="order-item">
+                    <span class="item-name">Smartphone XYZ</span>
+                    <span class="item-price">R$: 2.500,00</span>
+                </div>
+                <div class="order-item">
+                    <span class="item-name">Notebook ABC</span>
+                    <span class="item-price">R$: 4.000,00</span>
+                </div>
+            </div>
+            <div class="order-totals">
+                <div class="total-item">
+                    <span class="total-label">Subtotal:</span>
+                    <span class="total-value">R$: 6.500,00</span>
+                </div>
+                <div class="total-item">
+                    <span class="total-label">Frete:</span>
+                    <span class="total-value">R$: 50,00</span>
+                </div>
+                <div class="total-item">
+                    <span class="total-label">Total:</span>
+                    <span class="total-value">R$: 6.550,00</span>
+                </div>
+            </div>
+        </div>
+        <div class="payment-details">
+            <h3>Detalhes de Pagamento</h3>
+            <form>
+                <div class="form-group">
+                    <label for="card-number">Número do Cartão:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Digite o número do cartão" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Nome no Cartão:</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Digite o nome no cartão" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Data de Validade:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Digite o CVV" required>
+                </div>
+                <button type="submit" class="confirm-order">Confirmar Pedido</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

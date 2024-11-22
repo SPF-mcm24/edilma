@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>TechStore</h1>
+         <div class="search-bar">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <div class="cart">
+            <a href="carrinho.html">Carrinho</a>
+           <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <main>
+        <h2 class="section-title">Seu Carrinho</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="item-image placeholder-image"></div>
+                <div class="item-details">
+                    <h3>Smartphone XYZ</h3>
+                    <p>R$: 2.500,00</p>
+                    <div class="quantity-control">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="item-total">
+                    <p>R$: 2.500,00</p>
+                <button class="remove-item">Remover</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="item-image placeholder-image"></div>
+                <div class="item-details">
+                    <h3>Notebook ABC</h3>
+                    <p>R$: 4.000,00</p>
+                     <div class="quantity-control">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="item-total">
+                    <p>R$: 4.000,00</p>
+                    <button class="remove-item">Remover</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="cart-summary">
+            <p>Subtotal: R$: 6.500,00</p>
+            <p>Frete: R$: 50,00</p>
+            <p>Total: R$: 6.550,00</p>
+            <a href="finalizar.html" class="checkout-btn">Finalizar Compra</a>
+        </div>
+    </main>
+</body>
+</html>
